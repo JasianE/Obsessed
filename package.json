@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dbstart": "docker-compose -f docker-compose-pg.yaml up",
+    "r": "ls -A"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Jun Li <junchenli423@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "eslint": "^8.13.0",
+    "express": "^4.17.3",
+    "pg": "^8.7.3"
+  },
+  "repository": "git@github.com:JasianE/Obsessed.git"
 }
